@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+#results {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+}
+
+#results li {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+}
