@@ -1,15 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Recipe Finder</title>
-  <link rel="stylesheet" href="/static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Recipe Finder</h1>
-  <input type="text" id="search" placeholder="Search for a recipe...">
-  <button onclick="searchRecipe()">Search</button>
-  <ul id="results"></ul>
+    <nav class="navbar">
+        <div class="logo">🍳 FOODINGURSELIF</div>
+        <div class="nav-links">
+            
+            <span>AI Chef</span>
+        </div>
+    </nav>
 
-  <script src="/static/script.js"></script>
+    <header class="hero">
+        <h1>Discover & Cook</h1>
+        <p>Find the perfect recipe for u</p>
+        
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search by name..." oninput="searchRecipe()">
+            <button onclick="searchRecipe()">+ New Recipe</button>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">FEATURED TODAY</h2>
+        <div id="results" class="recipe-grid">
+            </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
